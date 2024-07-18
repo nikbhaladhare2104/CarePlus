@@ -34,7 +34,7 @@ export const AppointmentForm = ({
   type: "create" | "schedule" | "cancel";
   appointment?: Appointment;
   // setOpen?: Dispatch<SetStateAction<boolean>>;
-  setOpen: (open: boolean) => void;
+  setOpen?: (open: boolean) => void;
 }) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
